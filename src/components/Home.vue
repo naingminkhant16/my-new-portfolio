@@ -1,11 +1,11 @@
 <template>
-    <div class="home d-flex align-items-center">
-        <div class="container-fluid">
+    <div class="home  d-flex align-items-center">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <!-- <div class="col-lg-2">
 
-                </div>
-                <div class="col-lg-4">
+                </div> -->
+                <div class="col-lg-5">
                     <div class="d-flex mb-3 justify-content-center align-items-center">
                         <img src="../assets/pp.jpg" class="pp w-75 animate__animated animate__fadeIn"
                             :class="{ 'd-none': pp1 }" alt="">
@@ -22,7 +22,7 @@
                         <i @click="swapPhotos(3)" class="bi bi-circle " :class="{ 'text-primary': !pp3 }"></i>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                <div class="col-lg-5 d-flex justify-content-center align-items-center">
                     <div class="mb-5 animate__animated animate__fadeInUp">
                         <h2>Hello, I'm
                             <span class="text-primary fs-1">
@@ -37,8 +37,8 @@
                         </router-link>
                     </div>
                 </div>
-                <div
-                    class="col-lg-2 d-flex flex-lg-column justify-content-lg-center justify-content-around align-items-start">
+                <div class="col-lg-2 d-flex flex-lg-column justify-content-lg-center
+                     justify-content-around align-items-center">
                     <!-- <div class=""> -->
                     <a href="https://www.facebook.com/TharKhant.734/"
                         class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import { onMounted, ref } from '@vue/runtime-core'
+import { ref } from '@vue/runtime-core'
 import VueWriter from 'vue-writer'
 export default {
     setup() {
@@ -68,7 +68,7 @@ export default {
             "Junior Web Developer.",
             "PHP Developer.",
             'Laravel Developer.',
-            'interested in Coding & Sports.'];
+            'interested in Coding.'];
 
         //note! false is active image
         let pp1 = ref(false);
