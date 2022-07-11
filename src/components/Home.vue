@@ -7,15 +7,26 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex mb-3 justify-content-center align-items-center">
-                        <img src="../assets/pp.jpg" class="pp w-75" alt="">
+                        <img src="../assets/pp.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                            :class="{ 'd-none': pp1 }" alt="">
+
+                        <img src="../assets/pp2.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                            :class="{ 'd-none': pp2 }" alt="">
+
+                        <img src="../assets/pp3.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                            :class="{ 'd-none': pp3 }" alt="">
+                    </div>
+                    <div class="d-flex mb-3 justify-content-center">
+                        <i @click="swapPhotos(1)" class="bi bi-circle me-2" :class="{ 'text-primary': !pp1 }"></i>
+                        <i @click="swapPhotos(2)" class="bi bi-circle me-2 " :class="{ 'text-primary': !pp2 }"></i>
+                        <i @click="swapPhotos(3)" class="bi bi-circle " :class="{ 'text-primary': !pp3 }"></i>
                     </div>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                    <div class="mb-5">
+                    <div class="mb-5 animate__animated animate__fadeInUp">
                         <h2>Hello, I'm
                             <span class="text-primary fs-1">
-                                <VueWriter :array="typing" :start="1000" :typeSpeed="70" :caret="cursor"
-                                    :iterations='0' />
+                                <VueWriter :array="typing" :start="1000" :typeSpeed="70" :iterations='0' />
                             </span>
                         </h2>
                         <hr>
@@ -29,11 +40,14 @@
                 <div
                     class="col-lg-2 d-flex flex-lg-column justify-content-lg-center justify-content-around align-items-start">
                     <!-- <div class=""> -->
-                    <a href="#" class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
+                    <a href="https://www.facebook.com/TharKhant.734/"
+                        class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
                         <i class="bi bi-facebook fs-3"></i></a>
-                    <a href="#" class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
+                    <a href="https://github.com/naingminkhant16"
+                        class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
                         <i class="bi bi-github fs-3"></i></a>
-                    <a href="#" class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
+                    <a href="https://www.linkedin.com/in/naing-min-khant/"
+                        class="mb-lg-3 me-3 me-lg-0 text-decoration-none text-white">
                         <i class="bi bi-linkedin fs-3"></i></a>
                     <a href="#" class="text-decoration-none text-white">
                         <i class="bi mb-lg-3 bi-twitter fs-3"></i></a>
@@ -54,9 +68,33 @@ export default {
             "Junior Web Developer.",
             "PHP Developer.",
             'Laravel Developer.',
-            'interested in Backend.'];
+            'interested in Coding & Sports.'];
 
-        return { typing }
+        //note! false is active image
+        let pp1 = ref(false);
+        let pp2 = ref(true);
+        let pp3 = ref(true);
+        let swapPhotos = (photo) => {
+            switch (photo) {
+                case 1:
+                    pp2.value = true
+                    pp3.value = true
+                    pp1.value = false;
+                    break;
+                case 2:
+                    pp1.value = true;
+                    pp3.value = true;
+                    pp2.value = false;
+                    break;
+                case 3:
+                    pp1.value = true;
+                    pp2.value = true;
+                    pp3.value = false;
+                    break;
+            }
+        }
+
+        return { typing, swapPhotos, pp1, pp2, pp3 }
     },
     components: {
         VueWriter
