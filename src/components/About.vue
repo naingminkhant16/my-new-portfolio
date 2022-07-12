@@ -3,7 +3,7 @@
         <!-- <h2 class="text-primary">This is About Me</h2> -->
         <div class="row">
             <div class="col-lg-8">
-                <div class="animate__animated animate__fadeInUp">
+                <div class="animate__animated animate__fadeInUp mt-3">
                     <h2 class="">This page is all <span class="text-primary">About Me</span></h2>
                     <hr>
                     <div class="">
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="animate__animated animate__fadeInUp mb-3">
+                <div class="animate__animated animate__fadeInUp mt-3 mb-3">
                     <p><span class="fw-bold">Name : </span>Naing Min Khant</p>
                     <hr>
                     <p><span class="fw-bold">Email : </span><a href="mailto: tharkhant777@gmail.com"
@@ -32,7 +32,8 @@
                     <hr>
                     <p><span class="fw-bold">From : </span>South Okkalapa Township, Yangon,
                         Myanmar</p><br>
-                    <a href="#" class="btn btn-primary fw-bold" download>Download CV</a>
+                    <a href="/cv.docx" class="btn btn-primary fw-bold" download>
+                        Download CV</a>
                 </div>
             </div>
 
@@ -86,12 +87,11 @@ export default {
             setTimeout(() => {
                 NumCounter(exp, 1);
                 NumCounter(client, 2);
-                NumCounter(pjs, 40);
+                NumCounter(pjs, 25);
                 NumCounter(certi, 4);
                 NumCounter(age, 20);
             }, 1000)
         });
-
 
         return { age, exp, client, pjs, certi }
     },
@@ -101,14 +101,20 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .about {
     height: 94vh;
 }
 
-
 .numbers {
     font-size: 1.6rem;
     text-align: center;
+    color: var(--bs-primary);
+}
+
+@media only screen and (max-width: 420px) {
+    .about {
+        height: 100% !important;
+    }
 }
 </style>

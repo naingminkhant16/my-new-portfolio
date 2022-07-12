@@ -2,18 +2,15 @@
     <div class="home  d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-2">
-
-                </div> -->
                 <div class="col-lg-5">
                     <div class="d-flex mb-3 justify-content-center align-items-center">
-                        <img src="../assets/pp.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                        <img src="../assets/pp.jpg" class="pp w-50 animate__animated animate__fadeIn"
                             :class="{ 'd-none': pp1 }" alt="">
 
-                        <img src="../assets/pp2.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                        <img src="../assets/pp2.jpg" class="pp w-50 animate__animated animate__fadeIn"
                             :class="{ 'd-none': pp2 }" alt="">
 
-                        <img src="../assets/pp3.jpg" class="pp w-75 animate__animated animate__fadeIn"
+                        <img src="../assets/pp3.jpg" class="pp w-50 animate__animated animate__fadeIn"
                             :class="{ 'd-none': pp3 }" alt="">
                     </div>
                     <div class="d-flex mb-3 justify-content-center">
@@ -30,10 +27,14 @@
                             </span>
                         </h2>
                         <hr>
-                        <p class="">You can call me Thar Khant (my nickname). I'm 20 years old typical Burmese Boy who
+                        <p class="" style="text-align: justify;">You can call me Thar Khant (my nickname). I'm 20 years
+                            old typical Burmese Boy who
                             is passionate about coding. I'm interested in Backend Development and currently learning
                             Laravel and VueJs. My dream is to become a Software Engineer in future.</p>
-                        <router-link :to="{ name: 'about' }" class="btn btn-lg btn-primary">Know Me More
+
+                        <router-link :to="{ name: 'about' }" class="me-2 btn btn-outline-primary">My Skills
+                        </router-link>
+                        <router-link :to="{ name: 'about' }" class="btn btn-primary">Know Me More
                         </router-link>
                     </div>
                 </div>
@@ -108,6 +109,7 @@ export default {
 }
 
 .pp {
-    border-radius: 50%;
+    margin-top: 5px;
+    border-radius: 1%;
 }
 </style>
