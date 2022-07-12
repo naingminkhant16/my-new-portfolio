@@ -3,10 +3,10 @@ import {
   createWebHashHistory
 } from 'vue-router'
 
-import Home from "../components/Home.vue";
-import About from "../components/About.vue";
-import Skills from "../components/Skills.vue";
-import Portfolio from "../components/Portfolio.vue";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import Skills from "../views/Skills.vue";
+import Portfolio from "../views/Portfolio.vue";
 
 const routes = [{
     path: '/',

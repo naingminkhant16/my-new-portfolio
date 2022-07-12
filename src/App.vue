@@ -2,6 +2,9 @@
   <div class="border border-info">
     <nav-bar></nav-bar>
     <router-view></router-view>
+    <footer class="text-center bg-dark p-2">
+      Copy right @ 2022, Created by Naing Min Khant
+    </footer>
   </div>
 </template>
 

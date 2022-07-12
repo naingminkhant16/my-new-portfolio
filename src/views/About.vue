@@ -1,7 +1,7 @@
 <template>
     <div class="container about mt-3 mt-lg-0 d-flex justify-content-center align-items-center">
         <!-- <h2 class="text-primary">This is About Me</h2> -->
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-8">
                 <div class="animate__animated animate__fadeInUp mt-3">
                     <h2 class="">This page is all <span class="text-primary">About Me</span></h2>
@@ -16,11 +16,13 @@
                             love with Programming. I used to be a team leader in Group Projects at University. As a
                             left-brained person, I am strong at logical and critical thinking. I love to solve problems.
                         </p>
+                        <a href="/cv.docx" class="btn btn-primary fw-bold" download>
+                            Download CV</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="animate__animated animate__fadeInUp mt-3 mb-3">
+                <div class="animate__animated animate__fadeInUp mt-3 mb-3 border border-primary p-5">
                     <p><span class="fw-bold">Name : </span>Naing Min Khant</p>
                     <hr>
                     <p><span class="fw-bold">Email : </span><a href="mailto: tharkhant777@gmail.com"
@@ -31,9 +33,8 @@
                     </p>
                     <hr>
                     <p><span class="fw-bold">From : </span>South Okkalapa Township, Yangon,
-                        Myanmar</p><br>
-                    <a href="/cv.docx" class="btn btn-primary fw-bold" download>
-                        Download CV</a>
+                        Myanmar</p>
+
                 </div>
             </div>
 
@@ -103,14 +104,16 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-    height: 94vh;
+    height: 90vh;
+
+    .numbers {
+        font-size: 1.6rem;
+        text-align: center;
+        color: var(--bs-primary);
+    }
 }
 
-.numbers {
-    font-size: 1.6rem;
-    text-align: center;
-    color: var(--bs-primary);
-}
+
 
 @media only screen and (max-width: 420px) {
     .about {

@@ -1,5 +1,5 @@
 <template>
-    <div class="home  d-flex align-items-center">
+    <div class="home my-3 my-sm-0 d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -105,7 +105,7 @@ export default {
 
 <style scoped>
 .home {
-    height: 94vh;
+    height: 90vh;
 }
 
 .pp {
