@@ -32,7 +32,7 @@
                             is passionate about coding. I'm interested in Backend Development and currently learning
                             Laravel and VueJs. My dream is to become a Software Engineer in future.</p>
 
-                        <router-link :to="{ name: 'about' }" class="me-2 btn btn-outline-primary">My Skills
+                        <router-link :to="{ name: 'skills' }" class="me-2 btn btn-outline-primary">My Skills
                         </router-link>
                         <router-link :to="{ name: 'about' }" class="btn btn-primary">Know Me More
                         </router-link>
