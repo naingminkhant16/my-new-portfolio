@@ -3,7 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="d-flex mb-3 justify-content-center align-items-center">
+                    <div
+                        class="d-flex mb-3 justify-content-center align-items-center animate__animated animate__fadeInUp">
                         <img src="../assets/pp.jpg" class="pp w-50 animate__animated animate__fadeIn"
                             :class="{ 'd-none': pp1 }" alt="">
 
