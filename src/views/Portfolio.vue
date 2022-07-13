@@ -17,7 +17,7 @@
                                     <button @click="pjsHandler('laravel')" class="btn me-2 btn-outline-primary"
                                         :class="{ 'btn-primary text-white': x == 'laravel' }">Laravel</button>
                                     <button @click="pjsHandler('js')" class="btn me-2 btn-outline-primary"
-                                        :class="{ 'btn-primary text-white': x == 'js' }">JavaScript</button>
+                                        :class="{ 'btn-primary text-white': x == 'js' }">JS</button>
                                     <button @click="pjsHandler('vuejs')" class="btn btn-outline-primary"
                                         :class="{ 'btn-primary text-white': x == 'vuejs' }">VueJs</button>
                                 </div>
