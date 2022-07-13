@@ -1,6 +1,6 @@
 <template>
     <div class="row animate__animated animate__fadeInUp">
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'js'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/b5-foodie.png" alt="example-image">
@@ -11,7 +11,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/edusite.png" alt="example-image">
@@ -22,7 +22,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'js'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/portfolio1.png" alt="example-image">
@@ -33,7 +33,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'vuejs'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/invoice-vue.png" alt="example-image">
@@ -44,7 +44,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/mz_rose.png" alt="example-image">
@@ -55,7 +55,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'js'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/portfolio.png" alt="example-image">
@@ -67,7 +67,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/shop.png" alt="example-image">
@@ -78,7 +78,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'js'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/gold.png" alt="example-image">
@@ -90,7 +90,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'laravel'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/lara-blog.png" alt="example-image">
@@ -101,7 +101,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/rjpa.png" alt="example-image">
@@ -112,7 +112,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'vuejs'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/listBuilder.png" alt="example-image">
@@ -124,7 +124,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/queryBuilder.png" alt="example-image">
@@ -138,7 +138,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'vuejs'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/gender.png" alt="example-image">
@@ -150,7 +150,7 @@
                 </figure>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" v-if="x == 'all' || x == 'php'">
             <div class="text-center mb-3">
                 <figure class="imghvr-reveal-up">
                     <img src="../../../src/assets/ecom.png" alt="example-image">
@@ -166,10 +166,11 @@
 
 <script>
 export default {
-    setup() {
-
-
-        return;
+    props: ['x'],
+    setup(props) {
+        let x = props.x;
+        console.log(x);
+        return { x };
     }
 }
 </script>

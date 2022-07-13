@@ -25,11 +25,15 @@
                 <div class="animate__animated animate__fadeInUp mt-3 mb-3 border border-primary p-5">
                     <p><span class="fw-bold">Name : </span>Naing Min Khant</p>
                     <hr>
+                    <p><span class="fw-bold">Age : </span>
+                        {{ age }}
+                    </p>
+                    <hr>
                     <p><span class="fw-bold">Email : </span><a href="mailto: tharkhant777@gmail.com"
                             class="email">tharkhant777@gmail.com</a></p>
                     <hr>
-                    <p><span class="fw-bold">Age : </span>
-                        {{ age }}
+                    <p><span class="fw-bold">Phone : </span>
+                        09-952128314
                     </p>
                     <hr>
                     <p><span class="fw-bold">From : </span>South Okkalapa Township, Yangon,
@@ -88,7 +92,7 @@ export default {
             setTimeout(() => {
                 NumCounter(exp, 1);
                 NumCounter(client, 2);
-                NumCounter(pjs, 25);
+                NumCounter(pjs, 20);
                 NumCounter(certi, 4);
                 NumCounter(age, 20);
             }, 1000)
