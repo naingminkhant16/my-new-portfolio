@@ -193,7 +193,7 @@
                                     </figure>
                                 </div>
                             </div>
-                            <div class="col-lg-4" v-if="x == 'all' || x == 'js'">
+                            <div class="col-lg-4" v-if="x == 'all' || x == 'vuejs'">
                                 <div class="text-center mb-3 animate__animated animate__fadeInUp">
                                     <figure class="imghvr-reveal-up">
                                         <img src="../assets/portfolioNew.png" alt="example-image">
