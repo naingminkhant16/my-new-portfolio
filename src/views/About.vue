@@ -16,7 +16,7 @@
                             love with Programming. I used to be a team leader in Group Projects at University. As a
                             left-brained person, I am strong at logical and critical thinking. I love to solve problems.
                         </p>
-                        <a href="/cv.docx" class="btn btn-primary fw-bold" download>
+                        <a href="/cv.pdf" class="btn btn-primary fw-bold" download>
                             Download CV</a>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ export default {
                 NumCounter(client, 2);
                 NumCounter(pjs, 20);
                 NumCounter(certi, 4);
-                NumCounter(age, 20);
+                NumCounter(age, 21);
             }, 1000)
         });
 

@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="/">NMK</a>
+                <a class="navbar-brand" href="/"><img width="50" src="../assets/nmk.png" alt=""></a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="navbarColor01" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -38,30 +38,6 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <!-- <ul class="navbar-nav">
-                            <li class="nav-item px-5">
-                                <a class="nav-link" onclick="hideOffCanvas()" id="home_nav" href="#">Home</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" onclick="hideOffCanvas()" id="about_nav" href="#about">About
-                                    Me</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" id="services_nav" href="#services"
-                                    onclick="hideOffCanvas()">Services</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" onclick="hideOffCanvas()" id="skills_nav" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" onclick="hideOffCanvas()" id="projects_nav"
-                                    href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" onclick="hideOffCanvas()" id="contact_nav"
-                                    href="#contact">Contact</a>
-                            </li>
-                        </ul> -->
                         <ul class="navbar-nav ms-auto text-center">
                             <li class="nav-item m-2">
                                 <router-link :to="{ name: 'home' }" @click="hideOffCanvas()" class="nl p-3">Home
